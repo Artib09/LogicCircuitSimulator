@@ -11,7 +11,7 @@ Supported gates: NOT, AND, NAND, OR, NOR, XOR. Includes a pre-implemented flip-f
 - The simulator's modular design allows building complex circuits, including sequential logic components like flip-flops.
 
 # Key Features
-**Wires**: Connect components in the circuit. Each wire holds a logical value and triggers actions upon state changes.
-**Simulation structure**: Encapsulates simulation time and an event queue, enabling multiple independent simulations.
-**Event queue**: A priority-based structure using heaps to manage and execute scheduled events chronologically.
+**Wires**: Connect components in the circuit. Each wire holds a logical value and triggers actions upon state changes. \
+**Simulation structure**: Encapsulates simulation time and an event queue, enabling multiple independent simulations. \
+**Event queue**: A priority-based structure using heaps to manage and execute scheduled events chronologically. \
 **Time control**: The simulation progresses in time using the sim-wait! function, executing all events whose time has arrived.
