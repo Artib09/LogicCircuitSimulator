@@ -1,11 +1,11 @@
 #lang racket
-(require "solution.rkt")
+(require "CircuitSimulator.rkt")
 (require rackunit)
 
 (define sim (make-sim))
 
-(define (mux a b s)
-  (wire-or (wire-and a s) (wire-and b (wire-not s) )))
+(define (mux input1 input2 select)
+  (wire-or (wire-and input1 select) (wire-and input2 (wire-not select) )))
 
 (define a (make-wire sim))
 (define b (make-wire sim))
